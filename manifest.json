@@ -1,19 +1,21 @@
+// the file that is used to "generate" the extension
+
 {
-  "manifest_version": 2,
-  "name": "SpeakEasy",
-  "version": "0.1",
-  "content_scripts": [
-	  {
-	    "matches": [
-	      "<all_urls>"
-	    ],
-	    "js": ["jquery-3.4.1.min.js", "content.js"]
-	  }
+  	"manifest_version": 2,
+  	"name": "SpeakEasy",
+  	"version": "0.1",
+  	"content_scripts": [
+  		{
+	    	"matches": [
+	      		"<all_urls>"
+	    	],
+	    	"js": ["jquery-3.4.1.min.js", "content.js"]
+	  	}
 	],
-  "browser_action": {
-	  "default_icon": "icon.png"
+  	"browser_action": {
+	  	"default_icon": "icon.png"
 	},
 	"background": {
-  "scripts": ["background.js"]
-}
+  		"scripts": ["background.js"]
+	}
 }
